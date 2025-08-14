@@ -1,5 +1,5 @@
 [project]
-name = "homodynetomography"
+name = "HomodyneTomography"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -10,6 +10,7 @@ dependencies = [
     "matplotlib>=3.9.4",
     "numba>=0.60.0",
     "numpy>=2.0.2",
+    "qutip>=5.0.4",
     "scipy>=1.13.1",
     "tqdm>=4.67.1",
 ]

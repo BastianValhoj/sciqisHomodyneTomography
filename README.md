@@ -238,3 +238,17 @@ To easily determine the change we can look at a subset of the iterations and the
 And the density matrix:
 
 ![compare for coherent state density matricies](HomoTomo/plots/finals/reconstruction_comparison_DM_cat.png)
+
+
+
+# Further progress
+
+If time would permit we would improve on the sampling of data, and determine why the log-likelihodds do not converge.
+
+Choice sampling uses sampling from the marginal, $p(x)$, and proposal distribution, $q(x)$. Then a uniform number in the interval $u \in [0,1)$ is generated and if $up(x) < q(x)$ we accempt the sample, otherwise reject.  
+This proved to be difficult to implement for non-gaussian states especially. It is also much slower than simply using choice-sampling.
+
+ 
+Additionally the log-likelihoods was never the reason for convergence:
+
+![Change in log-likelihood](HomoTomo/plots/finals/log_likelihoods_change_cat_recon.png)

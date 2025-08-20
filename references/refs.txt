@@ -1,0 +1,10 @@
+
+Continuous-variable optical quantum-state tomography:
+https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.81.299
+
+Iterative maximum-likelihood reconstruction in quantum homodyne tomography:
+https://iopscience.iop.org/article/10.1088/1464-4266/6/6/014
+
+Gaussian states and operations – a quick reference:
+https://arxiv.org/pdf/2102.05748
+

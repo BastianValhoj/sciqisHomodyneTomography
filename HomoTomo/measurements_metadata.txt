@@ -1,4 +1,4 @@
-state_type,coherent
+state_type,cat
 parity,even
 alpha,(2+1j)
 N_cutoff,30

@@ -1,7 +1,7 @@
-
 # sciqisHomodyneTomography
 Repo for Homodyne Tomography project in DTU course 10387 - Scientific computing in Quantum Information Science
 
+Author: Bastian Valhøj
 
 # Tomography
 In Homodyne Tomography we want to construct a (usually unkown) continous-varriable state from measuring the quadrature $\hat{X}_\theta = \dfrac{1}{\sqrt{2}}\left(\hat{a}e^{i\theta} + \hat{a}^\dagger e^{i\theta}\right) \equiv \hat{X}\cos{\theta} + \hat{P}\sin{\theta}$, where $\theta$ denotes a rotation of the state in phase space.
@@ -21,12 +21,15 @@ In this part, the workflow is as follows:
 
 ## The marginal distribution
 The wigner function we wish to investigate is the coherent state with displacement $\alpha = 2+i$, and is shown in the figure below:
+
 ![ground truth wigner function](HomoTomo/plots/generated_coherent_state_WF_alpha_2.00_1.00.png)
 
 ---------------------------------------------
 
 From this Wigner function we can compute the marginals as $p(X) = \int dP W(X,P)$. Since we want to project the data onto the $X_\theta$ axis as shown in the figure here:
-(from fig. 2. in [A. I. Lvovsky](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.81.299)) ![rotation of state](references/marginal_graphic.png)
+(from fig. 2. in [A. I. Lvovsky](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.81.299)) 
+
+![rotation of state](references/marginal_graphic.png)
 
 
 But we can just as easily rotate the whole Wigner function in the opposite direction (clockwise) and project the data onto $X$.
@@ -59,6 +62,7 @@ def rotate_state(rho, theta):
 To sample from these marginal distributions, we imploy a simple `numpy.choice`. 
 
 Some of the resulting marginals and samples are shown in the figure:
+
 ![marginals and sampling](HomoTomo/plots/marginal_distributions_coherent.png)
 
 
@@ -192,14 +196,17 @@ for i, theta in enumerate(theta_list): # iterate thetas
 
 ### The results
 
-The evoltution of the Wigner function is shown here in the gif
+The evoltution of the Wigner function is shown here in the gif:
+
 ![The evolution of WF for coherent state](HomoTomo/plots/finals/wigner_evolution_coherent_recon.gif)
 
 
 To easily determine the change we can look at a subset of the iterations and the ground truth:
+
 ![compare for coherent state wigner functions](HomoTomo/plots/finals/wigner_comparison_coherent_recon_stationary.png)
 
-And the density matrix 
+And the density matrix:
+
 ![compare for coherent state density matricies](HomoTomo/plots/finals/reconstruction_comparison_DM_coherent.png)
 
 
@@ -209,20 +216,25 @@ And the density matrix
 Now we show the results for an even cat state: $\ket{\alpha} + \ket{\alpha}$ with $\alpha = 2+i$ as before.
 
 Here is the expected output (ground truth):
+
 ![ground truth wigner function](HomoTomo/plots/finals/generated_cat_state_WF_alpha_2.00_1.00_parity_even.png)
 
 
 
 And plotting the marginals and sampling for some angles:
+
 ![marginals and sampling](HomoTomo/plots/finals/marginal_distributions_cat.png)
 
 
-he evoltution of the Wigner function is shown here in the gif
+The evoltution of the Wigner function is shown here in the gif:
+
 ![The evolution of WF for coherent state](HomoTomo/plots/finals/wigner_evolution_cat_recon.gif)
 
 
 To easily determine the change we can look at a subset of the iterations and the ground truth:
+
 ![compare for coherent state wigner functions](HomoTomo/plots/finals/wigner_comparison_cat_recon_stationary.png)
 
-And the density matrix 
+And the density matrix:
+
 ![compare for coherent state density matricies](HomoTomo/plots/finals/reconstruction_comparison_DM_cat.png)

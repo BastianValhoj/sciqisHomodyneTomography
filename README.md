@@ -193,14 +193,14 @@ for i, theta in enumerate(theta_list): # iterate thetas
 ### The results
 
 The evoltution of the Wigner function is shown here in the gif
-![The evolution of WF for coherent state](HomoTomo/plots/wigner_evolution_coherent_recon.gif)
+![The evolution of WF for coherent state](HomoTomo/plots/finals/wigner_evolution_coherent_recon.gif)
 
 
 To easily determine the change we can look at a subset of the iterations and the ground truth:
-![compare for coherent state wigner functions](HomoTomo/plots/wigner_comparison_coherent_recon_stationary.png)
+![compare for coherent state wigner functions](HomoTomo/plots/finals/wigner_comparison_coherent_recon_stationary.png)
 
 And the density matrix 
-![compare for coherent state density matricies](HomoTomo/plots/reconstruction_comparison_DM_coherent.png)
+![compare for coherent state density matricies](HomoTomo/plots/finals/reconstruction_comparison_DM_coherent.png)
 
 
 
@@ -209,20 +209,20 @@ And the density matrix
 Now we show the results for an even cat state: $\ket{\alpha} + \ket{\alpha}$ with $\alpha = 2+i$ as before.
 
 Here is the expected output (ground truth):
-![ground truth wigner function](HomoTomo/plots/generated_cat_state_WF_alpha_2.00_1.00_parity_even.png)
+![ground truth wigner function](HomoTomo/plots/finals/generated_cat_state_WF_alpha_2.00_1.00_parity_even.png)
 
 
 
 And plotting the marginals and sampling for some angles:
-![marginals and sampling](HomoTomo/plots/marginal_distributions_cat.png)
+![marginals and sampling](HomoTomo/plots/finals/marginal_distributions_cat.png)
 
 
 he evoltution of the Wigner function is shown here in the gif
-![The evolution of WF for coherent state](HomoTomo/plots/wigner_evolution_cat_recon.gif)
+![The evolution of WF for coherent state](HomoTomo/plots/finals/wigner_evolution_cat_recon.gif)
 
 
 To easily determine the change we can look at a subset of the iterations and the ground truth:
-![compare for coherent state wigner functions](HomoTomo/plots/wigner_comparison_cat_recon_stationary.png)
+![compare for coherent state wigner functions](HomoTomo/plots/finals/wigner_comparison_cat_recon_stationary.png)
 
 And the density matrix 
-![compare for coherent state density matricies](HomoTomo/plots/reconstruction_comparison_DM_cat.png)
+![compare for coherent state density matricies](HomoTomo/plots/finals/reconstruction_comparison_DM_cat.png)

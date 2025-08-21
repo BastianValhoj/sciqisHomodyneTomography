@@ -23,7 +23,6 @@ In this part, the workflow is as follows:
 The wigner function we wish to investigate is the coherent state with displacement $\alpha = 2+i$, and is shown in the figure below:
 
 <!-- ![ground truth wigner function](HomoTomo/plots/generated_coherent_state_WF_alpha_2.00_1.00.png) -->
-
 <img src="HomoTomo/plots/generated_coherent_state_WF_alpha_2.00_1.00.png" alt="ground truth wigner function" width=70%>
 
 
@@ -33,7 +32,7 @@ From this Wigner function we can compute the marginals as $p(X) = \int dP W(X,P)
 (from fig. 2. in [A. I. Lvovsky](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.81.299)) 
 
 <!-- ![rotation of state](references/marginal_graphic.png) -->
-<img src="references/marginal_graphic.png" alt="rotation of state" width=70%>
+<img src="references/marginal_graphic.png" alt="rotation of state" width=50%>
 
 
 But we can just as easily rotate the whole Wigner function in the opposite direction (clockwise) and project the data onto $X$.
@@ -204,7 +203,7 @@ for i, theta in enumerate(theta_list): # iterate thetas
 The evoltution of the Wigner function is shown here in the gif:
 
 <!-- ![The evolution of WF for coherent state](HomoTomo/plots/finals/wigner_evolution_coherent_recon.gif) -->
-<img src="HomoTomo/plots/finals/wigner_evolution_coherent_recon.gif" alt="The evolution of WF for coherent state" width=70%>
+<img src="HomoTomo/plots/finals/wigner_evolution_coherent_recon.gif" alt="The evolution of WF for coherent state" width=50%>
 
 To easily determine the change we can look at a subset of the iterations and the ground truth:
 
@@ -214,7 +213,7 @@ To easily determine the change we can look at a subset of the iterations and the
 And the density matrix:
 
 <!-- ![compare for coherent state density matricies](HomoTomo/plots/finals/reconstruction_comparison_DM_coherent.png) -->
-<img src="HomoTomo/plots/finals/reconstruction_comparison_DM_coherent.png" alt="compare for coherent state density matricies" width=70%>
+<img src="HomoTomo/plots/finals/reconstruction_comparison_DM_coherent.png" alt="compare for coherent state density matricies" width=60%>
 
 
 
@@ -227,32 +226,32 @@ Now we show the results for an even cat state: $\ket{\alpha} + \ket{\alpha}$ wit
 Here is the expected output (ground truth):
 
 <!-- ![ground truth wigner function](HomoTomo/plots/finals/generated_cat_state_WF_alpha_2.00_1.00_parity_even.png) -->
-<img alt="ground truth wigner function" src="HomoTomo/plots/finals/generated_cat_state_WF_alpha_2.00_1.00_parity_even.png" width=70%>
+<img alt="ground truth wigner function" src="HomoTomo/plots/finals/generated_cat_state_WF_alpha_2.00_1.00_parity_even.png" width=80%>
 
 
 
 And plotting the marginals and sampling for some angles:
 
 <!-- ![marginals and sampling](HomoTomo/plots/finals/marginal_distributions_cat.png) -->
-<img src="HomoTomo/plots/finals/marginal_distributions_cat.png" alt="marginals and sampling" width=70%>
+<img src="HomoTomo/plots/finals/marginal_distributions_cat.png" alt="marginals and sampling" width=50%>
 
 
 The evoltution of the Wigner function is shown here in the gif:
 
 <!-- ![The evolution of WF for coherent state](HomoTomo/plots/finals/wigner_evolution_cat_recon.gif) -->
-<img src="HomoTomo/plots/finals/wigner_evolution_cat_recon.gif" alt="The evolution of WF for coherent state" width=70%>
+<img src="HomoTomo/plots/finals/wigner_evolution_cat_recon.gif" alt="The evolution of WF for coherent state" width=50%>
 
 
 To easily determine the change we can look at a subset of the iterations and the ground truth:
 
 <!-- ![compare for coherent state wigner functions](HomoTomo/plots/finals/wigner_comparison_cat_recon_stationary.png) -->
-<img src="HomoTomo/plots/finals/wigner_comparison_cat_recon_stationary.png" alt="compare for coherent state wigner functions" width=70%>
+<img src="HomoTomo/plots/finals/wigner_comparison_cat_recon_stationary.png" alt="compare for coherent state wigner functions" width=90%>
 
 
 And the density matrix:
 
 <!-- ![compare for coherent state density matricies](HomoTomo/plots/finals/reconstruction_comparison_DM_cat.png) -->
-<img src="HomoTomo/plots/finals/reconstruction_comparison_DM_cat.png" alt="compare for coherent state density matricies" width=70%>
+<img src="HomoTomo/plots/finals/reconstruction_comparison_DM_cat.png" alt="compare for coherent state density matricies" width=80%>
 
 
 
@@ -269,4 +268,4 @@ Additionally the log-likelihoods was never the reason for convergence:
 
 <!-- ![Change in log-likelihood](HomoTomo/plots/finals/log_likelihoods_change_cat_recon.png) -->
 
-<img src="HomoTomo/plots/finals/log_likelihoods_change_cat_recon.png" alt="Change in log-likelihood" width=70%>
+<img src="HomoTomo/plots/finals/log_likelihoods_change_cat_recon.png" alt="Change in log-likelihood" width=50%>

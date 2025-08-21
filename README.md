@@ -211,6 +211,8 @@ And the density matrix:
 
 
 
+All these calculations are available in the notebook [reconstruct.ipynb](HomoTomo/reconstruct.ipynb)
+
 ## Reconstruction for a cat state
 
 Now we show the results for an even cat state: $\ket{\alpha} + \ket{\alpha}$ with $\alpha = 2+i$ as before.
